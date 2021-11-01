@@ -4,7 +4,7 @@ Created a Node.js application to serve up a webpage showing a comic strip levera
 
 Hosted on Heroku at: https://hkhan-comic-canopy.herokuapp.com/
 
-## Requirement Implemented
+## Requirements Implemented
 - [X] Use the xkcd API
 - [X] Has to be hosted on Heroku
 - [X] Has to be done in Javascript without Jquery
