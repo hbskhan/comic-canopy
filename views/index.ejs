@@ -2,13 +2,15 @@
 <html>
 	<head>
 		<meta name="viewport" content=" width=device-width, initial-scale=1.0" />
-		<title>Welcome!</title>
+		<title>Comic Canopy</title>
+        <link rel="icon" href="./assets/img/canopy-xl.png">
 		<link rel="stylesheet" href="./css/styles.css">
 	</head>
 
     <body>
 
         <div class="container">
+        <!--Title and Date-->
         <div id="heading" class="flex-container">
             <div id="title" class="item title">
                 <h1><%= title%></h1>
@@ -18,14 +20,15 @@
                 <h4>Created on: <%= month%>/<%= day%>/<%= year%></h4>
             </div>
         </div> 
-
+        <!--Navigation Buttons-->
         <div id="navigation" class="flex-container">
             <div class="item nav">
                 <button id="Random">Random</button> <button id="Previous"><i class="arrow left"></i></button> <button id="Next"><i class="arrow right"></i></button>
             </div>
         </div>
+        <!--Main comic-->
         <img class="comic" src="<%= img%>" alt="<%= alt%>"/>
-        
+        <!--Transcript Box-->
         <div class="flex-container flex-col">
             <h3 class="centertxt">Transcript</h3>
             <div class="item transcript">
