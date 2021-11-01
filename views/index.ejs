@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="viewport" content=" width=device-width, initial-scale=1.0" />
+		<title>Welcome!</title>
+		<link rel="stylesheet" href="./css/styles.css">
+		<!--
+        <link rel="icon" href="images/tab icon.png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+        -->
+	</head>
+
+    <body>
+        <header></header>
+        <div class="container">
+        <div id="heading" class="flex-container">
+            <div id="title" class="item title">
+                <h1><%= title%></h1>
+            </div>
+           
+            <div id="date" class="item date">
+                <h4>Created on: <%= month%>/<%= day%>/<%= year%></h4>
+            </div>
+        </div> 
+
+        <div id="navigation" class="flex-container">
+            <div class="item nav">
+                <button id="Random">Random</button> <button id="Previous">Previous</button> <button id="Next">Next</button>
+            </div>
+        </div>
+        <img class="comic" src="<%= img%>" alt="<%= alt%>"/>
+        
+        <div class="flex-container flex-col">
+            <h3 class="centertxt">Transcript</h3>
+            <div class="item transcript">
+                <p><%- transcript%></p>
+            </div>
+        </div>
+        </div>
+
+        <script src="./js/script.js"></script>
+    </body>
+
+</html>
