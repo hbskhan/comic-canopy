@@ -1,6 +1,6 @@
 # Coding Case Study for Stratus360
 
-Created a Node.js application to serve up a webpage showing a comic strip leverage the xkcd API
+Created a Node.js application to serve up a webpage showing a comic strip leveraging the xkcd API
 
 Hosted on Heroku at: https://hkhan-comic-canopy.herokuapp.com/
 
