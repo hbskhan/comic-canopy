@@ -4,15 +4,10 @@
 		<meta name="viewport" content=" width=device-width, initial-scale=1.0" />
 		<title>Welcome!</title>
 		<link rel="stylesheet" href="./css/styles.css">
-		<!--
-        <link rel="icon" href="images/tab icon.png">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-		<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
-        -->
 	</head>
 
     <body>
-        <header></header>
+
         <div class="container">
         <div id="heading" class="flex-container">
             <div id="title" class="item title">
@@ -26,7 +21,7 @@
 
         <div id="navigation" class="flex-container">
             <div class="item nav">
-                <button id="Random">Random</button> <button id="Previous">Previous</button> <button id="Next">Next</button>
+                <button id="Random">Random</button> <button id="Previous"><i class="arrow left"></i></button> <button id="Next"><i class="arrow right"></i></button>
             </div>
         </div>
         <img class="comic" src="<%= img%>" alt="<%= alt%>"/>
@@ -37,6 +32,9 @@
                 <p><%- transcript%></p>
             </div>
         </div>
+        <footer>
+            <p>By: Hamdan Khan</p>
+        </footer>
         </div>
 
         <script src="./js/script.js"></script>

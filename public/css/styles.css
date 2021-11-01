@@ -1,0 +1,149 @@
+/*Main styles.css*/
+html, body{
+	height: 100%;
+	margin: 0;
+	scroll-behavior: smooth;
+	font-family: 'Alata', sans-serif;
+	background-color: white;
+}
+
+.flex-container{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: baseline;
+	padding: 0px;
+	background-color: "";
+
+}
+
+.flex-col{
+	flex-flow: column wrap;
+	margin: 25px;
+	align-items: center;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	background-color: whitesmoke;
+}
+
+.item{
+	height: auto;
+	margin: 0px;
+	padding: 2%;
+	background-color: "";
+
+}
+
+.title{
+	flex-grow: 3;
+	background-color: "";
+}
+
+.date{
+	flex-grow: 1;
+	background-color: "";
+	text-align: right;
+}
+
+.nav{
+	align-self: right;
+	margin-left: auto;
+	margin-right: 0;
+	padding-right: 5%;
+	background-color:"";
+}
+
+.nav > button{
+	height: 30px;
+	
+}
+
+.arrow{
+	display: inline-block;
+	padding: 3px;
+	border: solid black;
+	border-width: 0 3px 3px 0;
+}
+
+.right{
+	transform: rotate(-45deg);
+  	-webkit-transform: rotate(-45deg);
+}
+
+.left{
+	transform: rotate(135deg);
+  	-webkit-transform: rotate(135deg);
+}
+
+.comic{
+	width: 90%;
+	padding: 5%;
+}
+
+.centertxt{
+    text-align: center;
+	box-sizing: border-box;
+	width: 95%;
+	background-color: "";
+}
+
+.transcript{
+	width:95%;
+	box-sizing: border-box;
+	padding: 3%, 0%, 3%, 5%;
+	background-color: whitesmoke;
+	
+}
+
+.container{
+	width: 75%;
+	height: auto;
+	margin:auto;
+	background-color: rgb(226, 226, 226);
+}
+
+.container > footer{
+	border-top: 2px solid black;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 5px;
+	background-color: whitesmoke;
+}
+
+/*Medium Screen*/
+@media screen and (max-width: 750px){
+	.container{
+		width: 90%;
+	}
+
+}
+
+/*Smaller screen*/
+@media screen and (max-width: 650px){
+	.container{
+		width: 100%;
+	}
+
+	.flex-container{
+		flex-flow: column wrap;
+		align-items: center;
+	}
+
+	.title{
+		flex-grow: 1;
+		text-align: center;
+	}
+
+	.nav{
+		width: 100%;
+		align-self: center;
+		margin: auto;
+		padding-left: 5%;
+		padding-right: 0%;
+	}
+
+	.nav > button{
+		width: 29.5%
+	}
+}
+

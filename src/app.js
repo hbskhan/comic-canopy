@@ -36,8 +36,10 @@ app.get('/:num', (req,res)=>{
     }
     console.log('new', 'https://xkcd.com/'+comicNum+'/info.0.json')
     axios.get('https://xkcd.com/'+comicNum+'/info.0.json').then((response) => {
+        if(response.error){
+            return response.error
+        }
         return response.data
-        
     }).then(({num, safe_title, day, month, year, img, alt, transcript}) => {
         res.status(200).render(viewsDir +'/index', {
             title: safe_title,

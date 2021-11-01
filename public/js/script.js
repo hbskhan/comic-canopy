@@ -7,7 +7,9 @@ const randButton = document.getElementById("Random")
 console.log('Script', currentNum)
 
 prevButton.onclick = ()=>{
-    window.location.href = '/' + (currentNum - 1)
+    if(!currentNum == 0){
+        window.location.href = '/' + (currentNum - 1)
+    }
 };
 
 nextButton.onclick = ()=>{
@@ -15,7 +17,7 @@ nextButton.onclick = ()=>{
 };
 
 randButton.onclick = ()=>{
-    window.location.href = '/' + (Math.floor(Math.random()*2000))
+    window.location.href = '/' + (Math.floor(Math.random()*2535))
 };
 
 
